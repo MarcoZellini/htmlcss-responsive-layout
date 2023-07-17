@@ -4,19 +4,36 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Responsive Layout</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
-    <body class="debug">
+    <body class>
 
         <header id="site_header">
             <div class="container d-flex justify-content-between align-center">
                 <div class="logo">
-                    Logo
+                    <a href="index.html"><img src="./assets/img/logo.png" alt="Site Logo"></a>
                 </div>
                 <!-- /.logo -->
-                <div class="mobile_menu">Mobile Menu</div>
+                <div class="mobile_menu">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </div>
                 <!-- /.mobile_menu -->
-                <div class="desktop_menu">Desktop Menu</div>
+                <div class="desktop_menu">
+                    <a class="text-decoration-none" href="#">Planning</a>
+                    <a class="text-decoration-none" href="#">Testimonials</a>
+                    <a class="text-decoration-none" href="#">Features</a>
+                    <a class="text-decoration-none" href="#">About Us</a>
+                    <a class="text-decoration-none" href="#">Get Started</a>
+                </div>
                 <!-- /.desktop_menu -->
             </div>
             <!-- /.container -->
