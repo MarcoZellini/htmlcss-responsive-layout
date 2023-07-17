@@ -8,6 +8,7 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
+    line-height: 170%;
 }
 
 /* #endregion Commons */
@@ -196,7 +197,7 @@ body {
 
 /* #region #site_main */
 
-/* #services */
+/* #region services */
 #services .row {
     padding: 2.5rem 0;
     margin: 0 -1rem;
@@ -215,7 +216,6 @@ body {
 }
 
 #services .card .card_text {
-    /* line-height: 160%; */
     font-weight: bold;
     color: var(--rl-light);
 }
@@ -227,7 +227,7 @@ body {
 
 #services .card .card_text p {
     margin-bottom: 2rem;
-    line-height: 170%;
+    /* line-height: 170%; */
 }
 
 #services .card .card_text a {
@@ -243,8 +243,71 @@ body {
     color: var(--rl-accent);
 }
 
-#services .card > *:last-child {
+#services .card>*:last-child {
     margin-top: 1rem;
+}
+
+/* #endregion services */
+
+/* #region planning */
+
+#planning {
+    background-color: var(--rl-primary);
+}
+
+#planning .left {
+    color: var(--rl-white);
+}
+
+#planning .right .card {
+    background-color: var(--rl-white);
+    border-radius: 45px;
+    text-align: center;
+}
+
+/* #endregion planning */
+
+#planning .row {
+   padding: 3rem 0;
+   margin: 0 -2rem;
+}
+
+#planning [class^="col-"] {
+    padding: 0 2rem;
+}
+
+#planning .card {
+    height: 100%;
+}
+
+#planning .left .card h2 {
+    padding-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+#planning .left .card{
+    margin-bottom: -2rem;
+}
+
+#planning .right .card{
+    padding: 2rem 1rem;
+}
+
+#planning .right .card h2{
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+#planning .right .card p{
+    font-style: italic;
+}
+
+#planning .freccia {
+    background-color: var(--rl-primary);
+    border-radius: 50%;
+    margin-top: 2rem;
+    padding: 2rem 1.5rem;
+    color: var(--rl-black);
 }
 
 /* #endregion #site_main */
@@ -271,9 +334,18 @@ body {
         padding: .25rem 1.5rem;
     }
 
-    .img-fluid {
+    #services .img-fluid {
         display: block;
         max-width: 50%;
+    }
+
+    #planning .row {
+        padding-top: 7rem;
+    }
+
+    #planning .left .card h2 {
+        padding: 5rem 0;
+        font-size: 2.5rem;
     }
 }
 
@@ -302,12 +374,20 @@ body {
         align-self: end;
     }
 
-    #site_main #services .get_demo .card_img img{
+    #site_main #services .get_demo .card_img img {
         display: inline-block;
         min-width: 80%;
     }
 
     #site_main #planning .col-lg-6 {
         width: calc(100% / 12 * 6);
+    }
+
+    #planning .right {
+        padding-top: 15rem;
+    }
+
+    #planning .left img {
+        padding-bottom: 5rem;
     }
 }
