@@ -169,6 +169,12 @@ body {
     border-radius: 25px;
 }
 
+.btn-primary {
+    background-color: var(--rl-primary);
+    text-decoration: none;
+    color: var(--rl-white);
+}
+
 /* #endregion utilities */
 
 
@@ -388,10 +394,11 @@ body {
 
 #benefits .row {
     padding-bottom: 4rem;
+    margin: 0 -1rem
 }
 
 #benefits [class^="col-"] {
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 #benefits .container > h1{
@@ -415,7 +422,18 @@ body {
 
 #benefits .card h1 {
     font-size: 3rem;
+    padding-top: 2rem;
 }
+
+#benefits .card h2 {
+    padding-top: 3rem;
+}
+
+#benefits .card p {
+    padding: 1.5rem 0;
+    color: var(--rl-dark);
+}
+
 
 /* #endregion benefits */
 
