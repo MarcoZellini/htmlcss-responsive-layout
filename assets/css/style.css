@@ -58,6 +58,10 @@ body {
     background-color: blueviolet;
 }
 
+.debug #planning .card {
+    height: 250px;
+}
+
 .debug #site_footer {
     height: 150px;
     background-color: palegoldenrod;
@@ -98,6 +102,10 @@ body {
 
 .d-flex {
     display: flex;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
 }
 
 .f-direction-column {
@@ -297,5 +305,9 @@ body {
     #site_main #services .get_demo .card_img img{
         display: inline-block;
         min-width: 80%;
+    }
+
+    #site_main #planning .col-lg-6 {
+        width: calc(100% / 12 * 6);
     }
 }
