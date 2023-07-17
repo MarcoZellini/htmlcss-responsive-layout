@@ -344,6 +344,10 @@ body {
         width: calc(100% / 12 * 8);
     }
 
+    .f-direction-row-md {
+        flex-direction: row;
+    }
+
     #services .card .btn-lg {
         display: block;
         max-width: 50%;
@@ -363,6 +367,7 @@ body {
         padding: 5rem 0;
         font-size: 2.5rem;
     }
+    
 }
 
 /* Desktop media query */
