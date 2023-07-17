@@ -28,7 +28,6 @@ body {
 }
 
 .debug #site_main {
-    height: 2500px;
     background-color: palegreen;
 }
 
@@ -42,6 +41,7 @@ body {
 .debug .card {
     background-color: palegoldenrod;
     height: 100%;
+    border: 1px dotted black;
 }
 
 .debug .card_text {
@@ -55,7 +55,7 @@ body {
 }
 
 .debug #planning {
-    height: 500px;
+    height: 1500px;
     background-color: blueviolet;
 }
 
@@ -68,8 +68,16 @@ body {
     background-color: palegoldenrod;
 }
 
+.debug #testimonials {
+    background-color: orange;
+    height: 900px;
+}
 
-
+.debug .img {
+    width: 100px;
+    aspect-ratio: 1/1;
+    background-color: red;
+}
 
 /* #endregion debug */
 
@@ -265,50 +273,58 @@ body {
     text-align: center;
 }
 
+#planning .row {
+    padding: 3rem 0;
+    margin: 0 -2rem;
+ }
+ 
+ #planning [class^="col-"] {
+     padding: 0 2rem;
+ }
+ 
+ #planning .card {
+     height: 100%;
+ }
+ 
+ #planning .left .card h2 {
+     padding-bottom: 5rem;
+     font-size: 2.5rem;
+ }
+ 
+ #planning .left .card{
+     margin-bottom: -2rem;
+ }
+ 
+ #planning .right .card{
+     padding: 2rem 1rem;
+ }
+ 
+ #planning .right .card h2{
+     padding: 1rem 0;
+     font-size: 2rem;
+ }
+ 
+ #planning .right .card p{
+     font-style: italic;
+ }
+ 
+ #planning .freccia {
+     background-color: var(--rl-primary);
+     border-radius: 50%;
+     margin-top: 2rem;
+     padding: 2rem 1.5rem;
+     color: var(--rl-black);
+ }
+
 /* #endregion planning */
 
-#planning .row {
-   padding: 3rem 0;
-   margin: 0 -2rem;
+/* #region testimonials */
+
+#testimonials [class^="col-"] {
+    margin: 1rem 0;
 }
 
-#planning [class^="col-"] {
-    padding: 0 2rem;
-}
-
-#planning .card {
-    height: 100%;
-}
-
-#planning .left .card h2 {
-    padding-bottom: 5rem;
-    font-size: 2.5rem;
-}
-
-#planning .left .card{
-    margin-bottom: -2rem;
-}
-
-#planning .right .card{
-    padding: 2rem 1rem;
-}
-
-#planning .right .card h2{
-    padding: 1rem 0;
-    font-size: 2rem;
-}
-
-#planning .right .card p{
-    font-style: italic;
-}
-
-#planning .freccia {
-    background-color: var(--rl-primary);
-    border-radius: 50%;
-    margin-top: 2rem;
-    padding: 2rem 1.5rem;
-    color: var(--rl-black);
-}
+/* #endregion testimonials */
 
 /* #endregion #site_main */
 
