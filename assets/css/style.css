@@ -32,6 +32,18 @@ body {
     background-color: palegreen;
 }
 
+.debug #services [class^="col-"] {
+    background-color: paleturquoise;
+    border: 1px dashed black;
+    height: 250px;
+    padding: 1rem;
+}
+
+.debug .card {
+    background-color: palegoldenrod;
+    height: 100%;
+}
+
 .debug #site_footer {
     height: 150px;
     background-color: palegoldenrod;
@@ -58,6 +70,11 @@ body {
     margin: auto;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .d-flex {
     display: flex;
 }
@@ -72,6 +89,10 @@ body {
 
 .text-decoration-none {
     text-decoration: none;
+}
+
+.col-12 {
+    width: 100%;
 }
 
 /* #endregion utilities */
@@ -106,6 +127,19 @@ body {
 }
 
 /* #endregion #site_header */
+
+/* #region #site_main */
+
+/* #services */
+#services .row {
+    padding: 2.5rem 0;
+}
+
+#services [class^="col-"] {
+    margin-bottom: 1rem;
+}
+
+/* #endregion #site_main */
 
 /* Tablet media query */
 
