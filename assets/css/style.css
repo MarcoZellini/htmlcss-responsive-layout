@@ -1,0 +1,87 @@
+/* #region Commons */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* #endregion Commons */
+
+
+/* #region debug */
+
+.debug #site_header {
+    height: 75px;
+    background-color: palevioletred;
+}
+
+.debug #site_header .logo,
+.debug #site_header .mobile_menu,
+.debug #site_header .desktop_menu {
+    border: 1px dotted black;
+}
+
+.debug #site_main {
+    height: 1500px;
+    background-color: palegreen;
+}
+
+.debug #site_footer {
+    height: 150px;
+    background-color: palegoldenrod;
+}
+
+
+/* #endregion debug */
+
+/* #region utilities */
+
+.container {
+    max-width: 1152px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* #endregion utilities */
+
+
+/** MOBILE FIRST **/
+
+
+/* #region #site_header */
+
+#site_header .container {
+    height: 100%;
+}
+
+#site_header .desktop_menu {
+    display: none;
+}
+
+#site_header .logo,
+#site_header .mobile_menu,
+#site_header .desktop_menu {
+    padding: 0.5rem 0;
+}
+
+/* #endregion #site_header */
+
+/* Tablet media query */
+
+
+
+/* Desktop media query */
