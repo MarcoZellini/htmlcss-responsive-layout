@@ -82,6 +82,21 @@
 
 /* Tablet media query */
 
+@media screen and (min-width: 768px) {
 
+}
 
 /* Desktop media query */
+
+@media screen and (min-width: 1200px) {
+    
+    #site_header .mobile_menu {
+        display: none;
+    }
+
+    #site_header .desktop_menu {
+        display: block;
+    }
+    
+
+}
