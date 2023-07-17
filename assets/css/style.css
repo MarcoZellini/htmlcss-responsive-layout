@@ -176,7 +176,6 @@ body {
     background-color: var(--rl-accent);
     color: var(--rl-white);
     font-size: 1.1rem;
-    font-weight: thin;
 }
 
 #site_header a {
@@ -290,9 +289,9 @@ body {
      padding-bottom: 5rem;
      font-size: 2.5rem;
  }
- 
- #planning .left .card{
-     margin-bottom: -2rem;
+
+ #planning [class^="col-"].right {
+    margin-top: 2rem;
  }
  
  #planning .right .card{
@@ -322,6 +321,55 @@ body {
 
 #testimonials [class^="col-"] {
     margin: 1rem 0;
+}
+
+#testimonials .row {
+    padding-bottom: 4rem;
+}
+
+#testimonials header {
+    padding: 2.5rem 0;
+}
+
+#testimonials header h1 {
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    line-height: 140%;
+    color: var(--rl-primary);
+}
+
+#testimonials .card {
+    background-color: var(--rl-primary);
+    color: var(--rl-white);
+    border-radius: 30px;
+    padding: 2rem 1rem;
+}
+
+#testimonials .card p{
+    padding: 1rem 0;
+}
+
+#testimonials .card .nat,
+#testimonials .card .celia,
+#testimonials .card .bob {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+#testimonials .nat {
+    background-image: url("../img/testimonial1.jpg");
+}
+
+#testimonials .celia {
+    background-image: url("../img/testimonial2.jpg");
+}
+
+#testimonials .bob {
+    background-image: url("../img/testimonial3.jpg");
 }
 
 /* #endregion testimonials */
@@ -368,6 +416,9 @@ body {
         font-size: 2.5rem;
     }
     
+    #testimonials .card p{
+        padding: 1rem;
+    }
 }
 
 /* Desktop media query */
