@@ -27,7 +27,7 @@ body {
 }
 
 .debug #site_main {
-    height: 1500px;
+    height: 2500px;
     background-color: palegreen;
 }
 
@@ -51,6 +51,11 @@ body {
 .debug .card_img {
     height: 100px;
     background-color: red;
+}
+
+.debug #planning {
+    height: 500px;
+    background-color: blueviolet;
 }
 
 .debug #site_footer {
