@@ -69,6 +69,7 @@ body {
     --rl-white: #FFFFFF;
     --rl-black: #000000;
     --rl-dark: #333333;
+    --rl-light: #3f3e3e94;
     --rl-accent: #0084fd;
     --rl-soft-accent: #b5ddff;
     --rl-primary: #9792e4;
@@ -129,8 +130,8 @@ body {
 .btn {
     background-color: var(--rl-white);
     color: var(--rl-black);
-    padding: 0.35rem 1rem;
-    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
 }
 
 .btn-lg {
@@ -152,6 +153,8 @@ body {
 #site_header {
     background-color: var(--rl-accent);
     color: var(--rl-white);
+    font-size: 1.1rem;
+    font-weight: thin;
 }
 
 #site_header a {
@@ -195,21 +198,23 @@ body {
     background-color: var(--rl-soft-accent);
     border-radius: 20px;
     padding: 0 2rem;
+    height: 100%;
 }
 
 #services .card .card_text {
-    line-height: 160%;
+    /* line-height: 160%; */
     font-weight: bold;
-    /* text-align: center; */
+    color: var(--rl-light);
 }
 
-#services .card .card_text h3 {
+#services .card .card_text h2 {
     color: var(--rl-accent);
     margin: 1.5rem 0;
 }
 
 #services .card .card_text p {
     margin-bottom: 2rem;
+    line-height: 170%;
 }
 
 #services .card .card_text a {
@@ -220,7 +225,7 @@ body {
 
 #services .card .card_img {
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 2rem;
     line-height: 0;
     color: var(--rl-accent);
 }
@@ -273,5 +278,19 @@ body {
 
     #site_header .desktop_menu a {
         margin-left: 2rem;
+    }
+
+    #site_main #services .get_demo {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #site_main #services .get_demo .card_img {
+        align-self: end;
+    }
+
+    #site_main #services .get_demo .card_img img{
+        display: inline-block;
+        min-width: 80%;
     }
 }
