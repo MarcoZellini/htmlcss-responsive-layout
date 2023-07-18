@@ -614,6 +614,10 @@ body {
 
 @media screen and (min-width: 768px) {
 
+    .text-md-left {
+        text-align: left;
+    }
+
     .col-md-4 {
         width: calc(100% / 12 * 4);
     }
@@ -644,18 +648,30 @@ body {
     #planning .row {
         padding-top: 7rem;
     }
-
+    
     #planning .left .card h2 {
         padding: 5rem 0;
         font-size: 3rem;
     }
-
+    
     #planning .right .card p{
         padding: 0 2rem;
     }
+
+    #testimonials header{
+        padding-bottom: 1.5rem;
+    }
+
+    #testimonials .card {
+        padding: 0rem 1rem;
+    }
     
-    #testimonials .card p{
-        padding: 1rem;
+    #testimonials .card .testimonial-text{
+        padding: 1.5rem;
+    }
+
+    #testimonials header h1 {
+        padding-top: 1rem;
     }
 
     #about .info p{
