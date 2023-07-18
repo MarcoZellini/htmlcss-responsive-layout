@@ -767,6 +767,10 @@ body {
     .col-lg-6 {
         width: calc(100% / 12 * 6);
     }
+    
+    #planning .left img {
+        padding-bottom: 10rem;
+    }
 
     #planning .right {
         padding-top: 12rem;
@@ -781,7 +785,7 @@ body {
         font-size: 3rem;
     }
 
-
+    
     #testimonials .card .nat, 
     #testimonials .card .celia,
     #testimonials .card .bob {
@@ -789,9 +793,22 @@ body {
         height: 200px;
         margin: 2rem 3rem 2rem 1rem;
     }
+    
+    #benefits .container > h1 {
+        font-size: 3rem;
+    }
 
-    #planning .left img {
-        padding-bottom: 10rem;
+    #benefits .card h1 {
+        font-size: 4rem;
+    }
+
+
+    #about .info p {
+        font-size: 1.2rem;
+    }
+
+    #about h2 {
+        font-size: 2.5rem;
     }
 
 }
