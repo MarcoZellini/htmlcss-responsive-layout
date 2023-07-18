@@ -346,11 +346,10 @@ body {
  
  #planning .right .card h2{
      padding: 1rem 0;
-     font-size: 2rem;
  }
  
  #planning .right .card p{
-     font-style: italic;
+    font-style: italic;
  }
  
  #planning .freccia {
@@ -648,7 +647,11 @@ body {
 
     #planning .left .card h2 {
         padding: 5rem 0;
-        font-size: 2.5rem;
+        font-size: 3rem;
+    }
+
+    #planning .right .card p{
+        padding: 0 2rem;
     }
     
     #testimonials .card p{
