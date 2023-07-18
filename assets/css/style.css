@@ -738,6 +738,12 @@ body {
         width: calc(100% / 12 * 6);
     }
 
+    #site_header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
     #site_header .mobile_menu {
         display: none;
     }
