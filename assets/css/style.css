@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'PT Sans', sans-serif;
     line-height: 170%;
@@ -794,7 +798,7 @@ body {
     .col-lg-6 {
         width: calc(100% / 12 * 6);
     }
-    
+
     #planning .left img {
         padding-bottom: 10rem;
     }
@@ -802,7 +806,7 @@ body {
     #planning .right {
         padding-top: 12rem;
     }
-    
+
     #testimonials header h4,
     #testimonials p {
         font-size: 1.2rem;
@@ -812,16 +816,16 @@ body {
         font-size: 3rem;
     }
 
-    
-    #testimonials .card .nat, 
+
+    #testimonials .card .nat,
     #testimonials .card .celia,
     #testimonials .card .bob {
         width: 200px;
         height: 200px;
         margin: 2rem 3rem 2rem 1rem;
     }
-    
-    #benefits .container > h1 {
+
+    #benefits .container>h1 {
         font-size: 3rem;
     }
 
