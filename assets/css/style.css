@@ -87,18 +87,23 @@ body {
 }
 
 .debug #about {
-    height: 2500px;
+    height: 2000px;
     background-color:crimson;
 }
 
-.debug #about h2 {
+.debug #about h1 {
     background-color: gold;
-    height: 30px;
+    height: 100px;
 }
 
 .debug #about p {
     height: 900px;
     background-color: yellowgreen;
+}
+
+.debug #get_started {
+    height: 900px;
+    background-color:hotpink
 }
 
 /* #endregion debug */
@@ -120,6 +125,7 @@ body {
     max-width: 1152px;
     width: 85%;
     margin: auto;
+    padding: 3rem 0;
 }
 
 .row {
@@ -177,6 +183,7 @@ body {
 }
 
 .btn {
+    display: inline-block;
     background-color: var(--rl-white);
     color: var(--rl-black);
     padding: 0.5rem 1rem;
@@ -184,11 +191,13 @@ body {
 }
 
 .btn-lg {
-    display: inline-block;
-    background-color: var(--rl-white);
-    color: var(--rl-black);
     padding: 0.35rem 3.5rem;
     border-radius: 25px;
+}
+
+.btn-xl {
+    padding: 1rem 5rem;
+    border-radius: 50px;
 }
 
 .btn-primary {
@@ -475,10 +484,6 @@ body {
     font-size: 5rem;
 }
 
-/* #about .info p{
-    padding: 2rem 2rem 2rem 0; 
-} */
-
 #about h2{
     font-size: 1.5rem;
 }
@@ -510,10 +515,58 @@ body {
 }
 
 #about .profile .btn i {
-    /* margin-right: 10px; */
+    margin-right: 5px;
 } 
 
 /* #endregion about */
+
+/* #region get_started */
+
+#get_started {
+    background-color: var(--rl-primary);
+}
+
+#get_started h1 {
+    font-size: 4rem;
+    color: var(--rl-warning);
+    padding: 2rem 0;
+}   
+
+#get_started h2 {
+    font-size: 1.75rem;
+    
+}   
+
+#get_started h3 {
+    font-size: 1.25rem;
+    color: var(--rl-light);
+}  
+
+#get_started h2,
+#get_started p,
+#get_started .policies {
+    color: var(--rl-white);
+    padding: 1rem;
+}
+
+
+#get_started .btn{
+    text-decoration: none;
+    color: var(--rl-primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+#get_started .policies a{
+    /* text-decoration: none; */
+    color: var(--rl-white);
+}
+
+
+/* #endregion get_started */
+
+
 
 /* #endregion #site_main */
 
