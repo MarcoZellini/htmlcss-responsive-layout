@@ -431,6 +431,10 @@ body {
     background-image: url("../img/testimonial3.jpg");
 }
 
+#testimonials .name {
+    font-size: 1.5rem;
+}
+
 /* #endregion testimonials */
 
 /* #region benefits */
@@ -766,6 +770,24 @@ body {
 
     #planning .right {
         padding-top: 12rem;
+    }
+    
+    #testimonials header h4,
+    #testimonials p {
+        font-size: 1.2rem;
+    }
+
+    #testimonials header h1 {
+        font-size: 3rem;
+    }
+
+
+    #testimonials .card .nat, 
+    #testimonials .card .celia,
+    #testimonials .card .bob {
+        width: 200px;
+        height: 200px;
+        margin: 2rem 3rem 2rem 1rem;
     }
 
     #planning .left img {
