@@ -498,6 +498,11 @@ body {
     font-size: 1.5rem;
 }
 
+#about .info p {
+    line-height: 210%;
+    font-size: 1.1rem;
+}
+
 #about .profile {
     padding-top: 3.5rem;
     padding-bottom: 1.5rem;
@@ -507,7 +512,6 @@ body {
     position: relative;
     background-image: url(../img/about.jpg);
     border-radius: 50%;
-    width: 75%;
     aspect-ratio: 1/1;
     background-position: center;
     background-size: cover;
@@ -677,8 +681,13 @@ body {
         padding-top: 1rem;
     }
 
+    #about h1 {
+        font-size: 5rem;
+        padding: 3rem 0;
+    }
+
     #about .info p{
-        padding: 2rem 2rem 2rem 0; 
+        padding: 2rem 4rem 2rem 0;
     }
 
     #get_started .container,
