@@ -230,6 +230,7 @@ body {
 
 #site_header .container {
     height: 100%;
+    padding: 0;
 }
 
 #site_header .desktop_menu {
@@ -248,7 +249,7 @@ body {
 
 /* #region services */
 #services .row {
-    padding: 2.5rem 0;
+    /* padding: 2.5rem 0; */
     margin: 0 -1rem;
 }
 
@@ -260,7 +261,7 @@ body {
 #services .card {
     background-color: var(--rl-soft-accent);
     border-radius: 20px;
-    padding: 0 2rem;
+    padding: 1rem 1.5rem;
     height: 100%;
 }
 
@@ -315,7 +316,7 @@ body {
 }
 
 #planning .row {
-    padding: 3rem 0;
+    /* padding: 3rem 0; */
     margin: 0 -2rem;
  }
  
@@ -371,7 +372,7 @@ body {
 }
 
 #testimonials header {
-    padding: 2.5rem 0;
+    padding-bottom: 2.5rem;
 }
 
 #testimonials header h1 {
@@ -424,7 +425,6 @@ body {
 }
 
 #benefits .row {
-    padding-bottom: 4rem;
     margin: 0 -1rem
 }
 
@@ -434,9 +434,9 @@ body {
 
 #benefits .container > h1{
     color: var(--rl-white);
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
-    padding: 4rem 0;
+    padding-bottom: 2.5rem;
     line-height: 130%;
 }
 
@@ -453,7 +453,7 @@ body {
 
 #benefits .card h1 {
     font-size: 3rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 #benefits .card h2 {
@@ -474,6 +474,10 @@ body {
     padding: 3rem 0;
 }
 
+#about .row{
+    padding-top: 2rem;
+}
+
 #about h1,
 #about h2 {
     color: var(--rl-primary);
@@ -481,7 +485,8 @@ body {
 
 #about h1{
     display: inline-block;
-    font-size: 5rem;
+    font-size: 3rem;
+    padding-bottom:3rem;
 }
 
 #about h2{
@@ -489,7 +494,8 @@ body {
 }
 
 #about .profile {
-    padding: 2.5rem 0;
+    padding-top: 3.5rem;
+    padding-bottom: 1.5rem;
 }
 
 #about .profile-image {
@@ -534,13 +540,17 @@ body {
 
 #get_started h2 {
     font-size: 1.75rem;
-    
+    line-height: 150%;
 }   
 
 #get_started h3 {
     font-size: 1.25rem;
     color: var(--rl-light);
 }  
+
+#get_started p {
+    line-height: 170%;
+}
 
 #get_started h2,
 #get_started p,
@@ -556,6 +566,11 @@ body {
     font-weight: bold;
     font-size: 1.2rem;
     margin: 1.5rem 0;
+}
+
+#get_started .policies {
+    line-height: 120%;
+    font-size: 0.8rem;
 }
 
 #get_started .policies a{
@@ -577,7 +592,12 @@ body {
     color: var(--rl-white);
 }
 
+#site_footer .container{
+    padding: 2rem 0;
+}
+
 #site_footer .top {
+    /* padding-bottom: 4rem; */
     padding-bottom: 3rem;
 }
 
@@ -694,8 +714,4 @@ body {
         padding-bottom: 10rem;
     }
 
-    /* #get_started .container,
-    #site_footer .container {
-        padding: 3rem 20rem;
-    } */
 }
