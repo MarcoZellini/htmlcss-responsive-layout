@@ -11,10 +11,7 @@ body {
     line-height: 170%;
 }
 
-
-
 /* #endregion Commons */
-
 
 /* #region debug */
 
@@ -61,7 +58,7 @@ body {
     background-color: blueviolet;
 }
 
-.debug  .card {
+.debug .card {
     height: 700px;
 }
 
@@ -88,7 +85,7 @@ body {
 
 .debug #about {
     height: 2000px;
-    background-color:crimson;
+    background-color: crimson;
 }
 
 .debug #about h1 {
@@ -103,7 +100,7 @@ body {
 
 .debug #get_started {
     height: 900px;
-    background-color:hotpink
+    background-color: hotpink
 }
 
 /* #endregion debug */
@@ -120,6 +117,8 @@ body {
     --rl-primary: #9792e4;
     --rl-warning: #fdc15f;
 }
+
+/* structure */
 
 .container {
     max-width: 1152px;
@@ -138,9 +137,17 @@ body {
     padding: 0 1rem;
 }
 
+.col-12 {
+    width: 100%;
+}
+
+/* displays */
+
 .d-block {
     display: block;
 }
+
+/* flex */
 
 .d-flex {
     display: flex;
@@ -158,6 +165,8 @@ body {
     justify-content: space-between;
 }
 
+/* text */
+
 .align-center {
     align-items: center;
 }
@@ -174,13 +183,13 @@ body {
     text-align: left;
 }
 
-.col-12 {
-    width: 100%;
-}
+/* images */
 
 .img-fluid {
     max-width: 100%;
 }
+
+/* buttons */
 
 .btn {
     display: inline-block;
@@ -277,13 +286,16 @@ body {
 
 #services .card .card_text p {
     margin-bottom: 2rem;
-    /* line-height: 170%; */
+
 }
 
-#services .card .card_text a {
+#services .card .card_text .btn {
+    font-size: 1.2rem;
     color: var(--rl-white);
     background-color: var(--rl-accent);
     letter-spacing: .15rem;
+    max-width: 90%;
+    padding: 0.75rem 2rem;
 }
 
 #services .card .card_img {
@@ -296,6 +308,7 @@ body {
 #services .card .card_img img {
     margin-bottom: -1rem;
 }
+
 #services .card>*:last-child {
     margin-top: 1rem;
 }
@@ -321,44 +334,44 @@ body {
 #planning .row {
     /* padding: 3rem 0; */
     margin: 0 -2rem;
- }
- 
- #planning [class^="col-"] {
-     padding: 0 2rem;
- }
- 
- #planning .card {
-     height: 100%;
- }
- 
- #planning .left .card h2 {
-     padding-bottom: 5rem;
-     font-size: 2.5rem;
- }
+}
 
- #planning [class^="col-"].right {
+#planning [class^="col-"] {
+    padding: 0 2rem;
+}
+
+#planning .card {
+    height: 100%;
+}
+
+#planning .left .card h2 {
+    padding-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+#planning [class^="col-"].right {
     margin-top: 2rem;
- }
- 
- #planning .right .card{
-     padding: 2rem 1rem;
- }
- 
- #planning .right .card h2{
-     padding: 1rem 0;
- }
- 
- #planning .right .card p{
+}
+
+#planning .right .card {
+    padding: 2rem 1rem;
+}
+
+#planning .right .card h2 {
+    padding: 1rem 0;
+}
+
+#planning .right .card p {
     font-style: italic;
- }
- 
- #planning .freccia {
-     background-color: var(--rl-primary);
-     border-radius: 50%;
-     margin-top: 2rem;
-     padding: 2rem 1.5rem;
-     color: var(--rl-black);
- }
+}
+
+#planning .freccia {
+    background-color: var(--rl-primary);
+    border-radius: 50%;
+    margin-top: 2rem;
+    padding: 2rem 1.5rem;
+    color: var(--rl-black);
+}
 
 /* #endregion planning */
 
@@ -391,7 +404,7 @@ body {
     padding: 2rem 1rem;
 }
 
-#testimonials .card p{
+#testimonials .card p {
     padding: 1rem 0;
 }
 
@@ -434,7 +447,7 @@ body {
     padding: 1rem;
 }
 
-#benefits .container > h1{
+#benefits .container>h1 {
     color: var(--rl-white);
     font-size: 2rem;
     text-align: center;
@@ -449,7 +462,7 @@ body {
 }
 
 #benefits h1,
-#benefits h2{
+#benefits h2 {
     color: var(--rl-primary);
 }
 
@@ -475,11 +488,11 @@ body {
 
 /* #region about */
 
-#about .container{
+#about .container {
     padding: 3rem 0;
 }
 
-#about .row{
+#about .row {
     padding-top: 2rem;
 }
 
@@ -488,13 +501,13 @@ body {
     color: var(--rl-primary);
 }
 
-#about h1{
+#about h1 {
     display: inline-block;
     font-size: 3rem;
-    padding-bottom:3rem;
+    padding-bottom: 3rem;
 }
 
-#about h2{
+#about h2 {
     font-size: 1.5rem;
 }
 
@@ -531,7 +544,7 @@ body {
 
 #about .profile .btn i {
     margin-right: 5px;
-} 
+}
 
 /* #endregion about */
 
@@ -545,19 +558,19 @@ body {
     font-size: 4rem;
     color: var(--rl-warning);
     padding: 2rem 0;
-}   
+}
 
 #get_started h2 {
     font-size: 1.75rem;
     line-height: 150%;
-}   
+}
 
 #get_started h3 {
     font-size: 1.15rem;
     font-weight: 100;
     color: rgb(223, 223, 223);
     letter-spacing: 2px;
-}  
+}
 
 #get_started p {
     line-height: 170%;
@@ -571,7 +584,7 @@ body {
 }
 
 
-#get_started .btn{
+#get_started .btn {
     text-decoration: none;
     color: var(--rl-primary);
     font-weight: bold;
@@ -585,7 +598,7 @@ body {
     font-size: 0.8rem;
 }
 
-#get_started .policies a{
+#get_started .policies a {
     /* text-decoration: none; */
     color: var(--rl-white);
 }
@@ -604,7 +617,7 @@ body {
     color: var(--rl-white);
 }
 
-#site_footer .container{
+#site_footer .container {
     padding: 2rem 0;
 }
 
@@ -644,10 +657,10 @@ body {
         flex-direction: row;
     }
 
-    #services .card .btn-lg {
-        display: block;
-        max-width: 50%;
-        padding: .25rem 1.5rem;
+    #services .card .card_text .btn {
+        letter-spacing: 4px;
+        max-width: 60%;
+        padding: 0.75rem 2rem;
     }
 
     #services .img-fluid {
@@ -658,25 +671,25 @@ body {
     #planning .row {
         padding-top: 7rem;
     }
-    
+
     #planning .left .card h2 {
         padding: 5rem 0;
         font-size: 3rem;
     }
-    
-    #planning .right .card p{
+
+    #planning .right .card p {
         padding: 0 2rem;
     }
 
-    #testimonials header{
+    #testimonials header {
         padding-bottom: 1.5rem;
     }
 
     #testimonials .card {
         padding: 0rem 1rem;
     }
-    
-    #testimonials .card .testimonial-text{
+
+    #testimonials .card .testimonial-text {
         padding: 1.5rem;
     }
 
@@ -689,7 +702,7 @@ body {
         padding: 3rem 0;
     }
 
-    #about .info p{
+    #about .info p {
         padding: 2rem 4rem 2rem 0;
     }
 
@@ -701,12 +714,12 @@ body {
     #get_started h1 {
         font-size: 5rem;
         padding: 3rem 0;
-    }  
+    }
 
     #get_started h2 {
         font-size: 2.5rem;
-    }  
-    
+    }
+
 }
 
 /* Desktop media query */
@@ -752,7 +765,7 @@ body {
     }
 
     #planning .right {
-        padding-top: 15rem;
+        padding-top: 12rem;
     }
 
     #planning .left img {
