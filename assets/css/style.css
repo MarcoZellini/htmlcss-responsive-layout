@@ -570,6 +570,24 @@ body {
 
 /* #endregion #site_main */
 
+/* #region #site_footer */
+
+#site_footer {
+    background-color: var(--rl-dark);
+    color: var(--rl-white);
+}
+
+#site_footer .top {
+    padding-bottom: 3rem;
+}
+
+#site_footer .bottom a {
+    color: var(--rl-primary);
+}
+
+/* #endregion #site_footer */
+
+
 /* Tablet media query */
 
 @media screen and (min-width: 768px) {
@@ -617,6 +635,12 @@ body {
     #about .info p{
         padding: 2rem 2rem 2rem 0; 
     }
+
+    #get_started .container,
+    #site_footer .container {
+        max-width: 500px;
+    }
+
     
 }
 
@@ -667,6 +691,11 @@ body {
     }
 
     #planning .left img {
-        padding-bottom: 5rem;
+        padding-bottom: 10rem;
     }
+
+    /* #get_started .container,
+    #site_footer .container {
+        padding: 3rem 20rem;
+    } */
 }
